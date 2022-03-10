@@ -1,9 +1,10 @@
 import { Injectable } from '@nestjs/common';
+import { HomeHTML } from '../mock/home.mock';
 
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World!';
+    return HomeHTML;
   }
 
   getFizzBuzz(count: number) {
